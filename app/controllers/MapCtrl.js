@@ -17,8 +17,8 @@ app.controller('MapCtrl', ['$scope', function($scope) {
   var styles = [
     {
       stylers: [
-        {hue: '#007178'},
-        {saturation: -55},
+        {hue: '#f27124'},
+        {saturation: -15},
         {lightness: 30}
       ]
     },
@@ -33,7 +33,7 @@ app.controller('MapCtrl', ['$scope', function($scope) {
   var styledMap = new google.maps.StyledMapType(styles, {name: 'Styled Map'});
 
   var mapOptions = {
-    zoom: 10,
+    zoom: 12,
     center: this.latLng,
     scrollwheel: false,
     mapTypeControlOptions: {

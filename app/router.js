@@ -14,9 +14,9 @@ app.config(['$routeProvider',
         controller: 'AboutCtrl'
       })
 
-      .when('/projects', {
-        templateUrl: 'views/projects.html',
-        controller: 'ProjectsCtrl'
+      .when('/work', {
+        templateUrl: 'views/work.html',
+        controller: 'WorkCtrl'
       })
 
       .when('/contact', {

@@ -10,7 +10,7 @@ var config = {
   ],
 
   data: {
-    name: 'Alpharetta',
+    name: 'Ann Arbor',
     address: '11770 Haynes Bridge Road',
     cityState: 'Alpharetta, GA 30009',
     telLink: '6787445844',
@@ -20,8 +20,8 @@ var config = {
     fb: 'https://www.facebook.com/pages/Salons-by-JC-Alpharetta/876484342370968',
     ig: 'https://instagram.com/salonsbyjc_alpharetta/',
     contact: 'http://salonsbyjc.com/alpharetta-alpharetta-crossing/contact-us/',
-    lat: 34.069504,
-    lng: -84.295151,
+    lat: 42.279594,
+    lng: -83.732124,
     marker: 'images/alpharetta.png'
   }
 

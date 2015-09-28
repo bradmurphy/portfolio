@@ -13,7 +13,7 @@ var router = require('./router');
 
 // controllers
 var AboutCtrl = require('./controllers/AboutCtrl');
-var ProjectsCtrl = require('./controllers/ProjectsCtrl');
+var WorkCtrl = require('./controllers/WorkCtrl');
 var ContactCtrl = require('./controllers/ContactCtrl');
 var MapCtrl = require('./controllers/MapCtrl');
 
