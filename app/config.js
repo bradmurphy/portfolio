@@ -1,7 +1,6 @@
 'use strict';
 
 // config object for all data and assets
-'use strict';
 
 var config = {
 
@@ -23,7 +22,31 @@ var config = {
     lat: 42.279594,
     lng: -83.732124,
     marker: 'images/alpharetta.png'
-  }
+  },
+
+  work: [
+    {
+      index: 0,
+      link: '#lilly-singh',
+      path: '/lilly-singh',
+      title: 'Lilly Singh',
+      client: 'YouTube'
+    },
+    {
+      index: 1,
+      link: '#google-search',
+      path: '/google-search',
+      title: 'Google Search',
+      client: 'Google'
+    },
+    {
+      index: 2,
+      link: '#google-satellites',
+      path: '/google-satellites',
+      title: 'Google Satellites',
+      client: 'Google'
+    }
+  ]
 
 };
 

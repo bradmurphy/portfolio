@@ -24,6 +24,21 @@ app.config(['$routeProvider',
         controller: 'ContactCtrl'
       })
 
+      .when('/lilly-singh', {
+        templateUrl: 'views/project.html',
+        controller: 'WorkCtrl'
+      })
+
+      .when('/google-search', {
+        templateUrl: 'views/project.html',
+        controller: 'WorkCtrl'
+      })
+
+      .when('/google-satellites', {
+        templateUrl: 'views/project.html',
+        controller: 'WorkCtrl'
+      })
+
       .otherwise({
         redirectTo: '/'
       });

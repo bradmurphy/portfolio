@@ -2,6 +2,15 @@
 
   <h1>Work Page</h1>
 
-  <p>{{ message }}</p>
+  <section class="work">
+    
+    <a ng-href="{{ work.link }}" ng-click="setIndex($index)" ng-repeat="work in work">
+      <div>
+        <h4>{{ work.title }}</h4>
+        <span>{{ work.client }}</span>
+      </div>
+    </a>
+
+  </section>
 
 </div>

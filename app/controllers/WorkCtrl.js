@@ -2,10 +2,18 @@
 
 // app
 var app = require('../app');
+var config = require('../config');
 
 // faq controller
 app.controller('WorkCtrl', ['$scope', function($scope) {
 
-  $scope.message = 'Work go here...';
+  $scope.index = null;
+  $scope.work = config.work;
+
+  $scope.setIndex = function(index) {
+
+    $scope.index = index;
+
+  };
 
 }]);
