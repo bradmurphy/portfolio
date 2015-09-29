@@ -12,10 +12,10 @@
   <body>
     
     <!-- page wrap -->
-    <div class="wrap">
+    <div class="wrap" ng-controller="NavCtrl">
 
       <!-- nav icon -->
-      <div id="nav-icon">
+      <div id="nav-icon" ng-click="toggleNav()">
         <div></div>
         <div></div>
         <div></div>
@@ -44,19 +44,19 @@
         <div class="content-wrap">
           
           <!-- mobile nav -->
-          <aside>
+          <aside id="menu">
             
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about" ng-click="closeNav()">About</a></li>
+              <li><a href="#work" ng-click="closeNav()">Work</a></li>
+              <li><a href="#contact" ng-click="closeNav()">Contact</a></li>
             </ul>
 
           </aside>
           <!-- end mobile nav-->
           
           <!-- views -->
-          <section ng-view></section>
+          <section id="content" ng-view></section>
           <!-- end views -->
 
         </div>

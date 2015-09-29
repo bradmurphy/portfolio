@@ -16,6 +16,7 @@ var AboutCtrl = require('./controllers/AboutCtrl');
 var WorkCtrl = require('./controllers/WorkCtrl');
 var ContactCtrl = require('./controllers/ContactCtrl');
 var ProjectCtrl = require('./controllers/ProjectCtrl');
+var NavCtrl = require('./controllers/NavCtrl');
 var MapCtrl = require('./controllers/MapCtrl');
 
 // load images
