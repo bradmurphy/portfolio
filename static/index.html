@@ -13,7 +13,16 @@
     
     <!-- page wrap -->
     <div class="wrap">
-      
+
+      <!-- nav icon -->
+      <div id="nav-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- end nav icon -->
+
       <!-- header -->
       <header>
 
@@ -28,9 +37,31 @@
       </header>
       <!-- end header -->
 
-      <!-- views -->
-      <section ng-view></section>
-      <!-- end views -->
+      <!-- content container -->
+
+      <div class="content">
+
+        <div class="content-wrap">
+          
+          <!-- mobile nav -->
+          <aside>
+            
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+          </aside>
+          <!-- end mobile nav-->
+          
+          <!-- views -->
+          <section ng-view></section>
+          <!-- end views -->
+
+        </div>
+
+      </div>
 
       <!-- footer-->
       <footer id="map" class="map-dir"></footer>
