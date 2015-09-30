@@ -17,15 +17,9 @@ app.controller('MapCtrl', ['$scope', function($scope) {
   var styles = [
     {
       stylers: [
-        {hue: '#f27124'},
-        {saturation: -15},
+        {hue: '#001f3f'},
+        {saturation: -55},
         {lightness: 30}
-      ]
-    },
-    {
-      elementType: 'labels.text',
-      stylers: [
-        {visibility: 'off'}
       ]
     }
   ];
@@ -33,12 +27,10 @@ app.controller('MapCtrl', ['$scope', function($scope) {
   var styledMap = new google.maps.StyledMapType(styles, {name: 'Styled Map'});
 
   var mapOptions = {
-    zoom: 12,
+    zoom: 13,
     center: this.latLng,
     scrollwheel: false,
-    mapTypeControlOptions: {
-      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-    }
+    disableDefaultUI: true
   };
 
   $scope.map = new google.maps.Map(this.map, mapOptions);
@@ -48,75 +40,26 @@ app.controller('MapCtrl', ['$scope', function($scope) {
 
   $scope.markers = [];
 
-  var infoWindow = new google.maps.InfoWindow();
   var marker;
 
-  var createMarker = function (info, marker) {
+  var createMarker = function (info) {
 
-    if (marker) {
-
-      marker = new google.maps.Marker({
-        map: $scope.map,
-        position: new google.maps.LatLng(info.lat, info.lng),
-        title: info.name,
-        icon: marker.marker
-      });
-
-    } else {
-
-      marker = new google.maps.Marker({
-        map: $scope.map,
-        position: new google.maps.LatLng(info.lat, info.lng),
-        title: info.name
-      });
-
-    }
-
-    marker.content = '<div class="info-block window">'
-    + '<span>' + info.address + '</span>'
-    + '<span>' + info.cityState + '</span>'
-      + '<a href="' + 'tel:' + info.telLink + '">' + info.tel + '</a>' + '<br/>'
-      + '<a href="' + info.dir + '" target="_blank">Directions</a> | '
-      + '<a href="' + info.web + '" target="_blank">Website</a> | '
-      + '<a href="' + info.contact + '" target="_blank">Contact Us</a>'
-    + '</div>';
+    marker = new google.maps.Marker({
+      map: $scope.map,
+      position: new google.maps.LatLng(info.lat, info.lng),
+      title: info.name,
+      icon: info.marker
+    });
 
     google.maps.event.addListener(marker, 'click', function() {
-      infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
-      infoWindow.open($scope.map, marker);
+      window.location.href = '#contact';
     });
 
     $scope.markers.push(marker);
 
   };
 
-  $scope.map.addListener('maptypeid_changed', function() {
-
-    if ($scope.styledMap) {
-
-      $scope.markers.forEach(function(el) {
-        el.setMap(null);
-      });
-
-      createMarker($scope.data, $scope.data);
-
-      $scope.styledMap = false;
-
-    } else {
-
-      $scope.markers.forEach(function(el) {
-        el.setMap(null);
-      });
-
-      createMarker($scope.data);
-
-      $scope.styledMap = true;
-
-    }
-
-  });
-
-  createMarker($scope.data, $scope.data);
+  createMarker($scope.data);
 
   if (browser.mobile || browser.tablet) {
 
