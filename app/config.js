@@ -27,25 +27,45 @@ var config = {
   work: [
     {
       index: 0,
-      link: '#lilly-singh',
-      path: '/lilly-singh',
+      link: '#lilly-singh-masthead',
+      path: '/lilly-singh-masthead',
       title: 'Lilly Singh',
+      type: 'Masthead',
       client: 'YouTube'
     },
     {
       index: 1,
-      link: '#google-search',
-      path: '/google-search',
-      title: 'Google Search',
+      link: '#ok-google-banner',
+      path: '/ok-google-banner',
+      title: 'Ok Google',
+      type: 'Banner',
       client: 'Google'
     },
     {
       index: 2,
-      link: '#google-satellites',
-      path: '/google-satellites',
+      link: '#google-satellites-website',
+      path: '/google-satellites-website',
       title: 'Google Satellites',
+      type: 'Website',
+      client: 'Google'
+    },
+    {
+      index: 3,
+      link: '#ok-google-masthead',
+      path: '/ok-google-masthead',
+      title: 'Ok Google',
+      type: 'Masthead',
+      client: 'Google'
+    },
+    {
+      index: 4,
+      link: '#google-search-masthead',
+      path: '/google-search-masthead',
+      title: 'Google Search',
+      type: 'Masthead',
       client: 'Google'
     }
+
   ]
 
 };

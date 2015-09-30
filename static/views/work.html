@@ -4,10 +4,10 @@
 
   <section class="work">
     
-    <a ng-href="{{ work.link }}" ng-click="setIndex($index)" ng-repeat="work in work">
+    <a ng-href="{{ work.link }}" ng-repeat="work in work">
       <div>
         <h4>{{ work.title }}</h4>
-        <span>{{ work.client }}</span>
+        <span>{{ work.type }}</span>
       </div>
     </a>
 
