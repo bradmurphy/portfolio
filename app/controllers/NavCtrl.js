@@ -11,18 +11,40 @@ app.controller('NavCtrl', ['$scope', function($scope) {
   var icon = document.querySelector('#nav-icon');
   var menu = document.querySelector('#menu');
 
+  var open = new TimelineMax({paused: true});
+
+  open.to(menu, 0.25, {
+    marginLeft: '0px',
+    ease: Power4.easeOut
+  })
+  .to(icon, 0.25, {
+    className: '+=open',
+    ease: Power4.easeOut
+  }, '-=0.25');
+
+  var close = new TimelineMax({paused: true});
+
+  close.to(menu, 0.25, {
+    marginLeft: '-220px',
+    ease: Power4.easeIn
+  })
+  .to(icon, 0.25, {
+    className: '-=open',
+    ease: Power4.easeIn
+  }, '-=0.25');
+
   $scope.toggleNav = function() {
 
     if (!status) {
 
-      TweenMax.to(icon, 0.5, {className: '+=open', ease: Power4.easeOut});
-      TweenMax.to(menu, 0.5, {marginLeft: '0%', ease: Power4.easeOut});
+      open.restart();
+
       status = true;
 
     } else {
 
-      TweenMax.to(icon, 0.5, {className: '-=open', ease: Power4.easeIn});
-      TweenMax.to(menu, 0.5, {marginLeft: '-100%', ease: Power4.easeIn});
+      close.restart();
+
       status = false;
 
     }
@@ -33,8 +55,8 @@ app.controller('NavCtrl', ['$scope', function($scope) {
 
     if (status) {
 
-      TweenMax.to(icon, 0.5, {className: '-=open', ease: Power4.easeIn});
-      TweenMax.to(menu, 0.5, {marginLeft: '-100%', ease: Power4.easeIn});
+      close.restart();
+
       status = false;
 
     }
