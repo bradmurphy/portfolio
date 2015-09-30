@@ -1,6 +1,6 @@
 'use strict';
 
 // initialize app
-var app = angular.module('oasisApp', ['ngRoute']);
+var app = angular.module('folioApp', ['ngRoute']);
 
 module.exports = app;
