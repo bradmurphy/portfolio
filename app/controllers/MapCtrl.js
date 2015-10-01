@@ -30,7 +30,8 @@ app.controller('MapCtrl', ['$scope', function($scope) {
     zoom: 13,
     center: this.latLng,
     scrollwheel: false,
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    draggable: false
   };
 
   $scope.map = new google.maps.Map(this.map, mapOptions);

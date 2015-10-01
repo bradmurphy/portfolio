@@ -50,15 +50,22 @@ body, html
           float left
           width calc(100% - 220px)
           height 100%
-          div 
+          
+          @media $tablet
+            width 100%
+
+          .view
+            width 100%
             box-sizing border-box
-            padding 0 15px
+            padding 25px 15px 0 15px
             @media $tablet
               padding 0 25px
             @media $laptop
               padding 0 50px
-          @media $tablet
-            width 100%
+            @media $desktop
+              padding 0 0
+              max-width 1280px
+              margin 0 auto
 
     footer
       display none
