@@ -7,7 +7,7 @@ var TweenMax = require('TweenMax');
 var app = angular.module('folioApp', ['ngRoute', 'ngAnimate']);
 
 // animation for views
-app.animation('.content', function() {
+app.animation('.animation', function() {
 
   return {
 
@@ -16,18 +16,14 @@ app.animation('.content', function() {
       var el = element[0].querySelector('.view');
 
       TweenMax.from(el, 0.4, {
-        x: '100%',
+        y: '200px',
+        autoAlpha: 0,
         ease: Power4.easeOut,
         onComplete: function() {
           done();
+          console.log('enter', el);
         }
       });
-
-    },
-
-    leave: function(element, done) {
-
-      done();
 
     }
 
