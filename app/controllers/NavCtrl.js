@@ -1,6 +1,6 @@
 'use strict';
 
-// app
+// require app and TweenMax
 var app = require('../app');
 var TweenMax = require('TweenMax');
 

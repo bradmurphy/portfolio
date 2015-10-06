@@ -1,19 +1,12 @@
 'use strict';
 
-// app
+// require app and config
 var app = require('../app');
 var config = require('../config');
 
-// faq controller
+// work controller
 app.controller('WorkCtrl', ['$scope', function($scope) {
 
-  $scope.index = null;
   $scope.work = config.work;
-
-  $scope.setIndex = function(index) {
-
-    $scope.index = index;
-
-  };
 
 }]);

@@ -1,6 +1,6 @@
 'use strict';
 
-// app
+// require app
 var app = require('./app');
 
 // router

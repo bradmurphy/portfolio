@@ -1,6 +1,6 @@
 'use strict';
 
-// app
+// require app and config
 var app = require('../app');
 var config = require('../config');
 

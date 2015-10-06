@@ -1,6 +1,6 @@
 'use strict';
 
-// app, config, bowser
+// require app, config and bowser
 var app = require('../app');
 var config = require('../config');
 var browser = require('bowser');

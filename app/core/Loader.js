@@ -1,5 +1,6 @@
 'use strict';
 
+// preloader
 function Loader( manifest ) {
 
   this.manifest = manifest;

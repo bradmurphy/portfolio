@@ -1,7 +1,6 @@
 'use strict';
 
-// config object for all data and assets
-
+// config object
 var config = {
 
   manifest: [
