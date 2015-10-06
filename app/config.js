@@ -26,35 +26,30 @@ var config = {
 
   work: [
     {
-      link: '#projects/lilly-singh-masthead',
       name: 'lilly-singh-masthead',
       title: 'Lilly Singh',
       type: 'Masthead',
       client: 'YouTube'
     },
     {
-      link: '#projects/ok-google-banner',
       name: 'ok-google-banner',
       title: 'Ok Google',
       type: 'Banner',
       client: 'Google'
     },
     {
-      link: '#projects/google-satellites-website',
       name: 'google-satellites-website',
       title: 'Google Satellites',
       type: 'Website',
       client: 'Google'
     },
     {
-      link: '#projects/ok-google-masthead',
       name: 'ok-google-masthead',
       title: 'Ok Google',
       type: 'Masthead',
       client: 'Google'
     },
     {
-      link: '#projects/google-search-masthead',
       name: 'google-search-masthead',
       title: 'Google Search',
       type: 'Masthead',
