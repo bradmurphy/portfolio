@@ -29,13 +29,15 @@ var config = {
       name: 'lilly-singh-masthead',
       title: 'Lilly Singh',
       type: 'Masthead',
-      client: 'YouTube'
+      client: 'YouTube',
+      url: 'http://www.bradmurphydev.com'
     },
     {
       name: 'ok-google-banner',
       title: 'Ok Google',
       type: 'Banner',
-      client: 'Google'
+      client: 'Google',
+      url: 'http://www.bradmurphydev.com'
     },
     {
       name: 'google-satellites-website',
@@ -47,13 +49,15 @@ var config = {
       name: 'ok-google-masthead',
       title: 'Ok Google',
       type: 'Masthead',
-      client: 'Google'
+      client: 'Google',
+      url: 'http://www.bradmurphydev.com'
     },
     {
       name: 'google-search-masthead',
       title: 'Google Search',
       type: 'Masthead',
-      client: 'Google'
+      client: 'Google',
+      url: 'http://www.bradmurphydev.com'
     }
 
   ]

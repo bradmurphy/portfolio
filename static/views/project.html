@@ -11,4 +11,8 @@
   <h4>{{ project.title }}</h4>
   <span>{{ project.client }}</span>
 
+  <div ng-if="iframeUrl">
+    <iframe width="970" height="250" ng-src="{{ iframeUrl }}"></iframe>
+  </div>
+
 </div>
