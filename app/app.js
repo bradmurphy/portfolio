@@ -13,12 +13,21 @@ app.animation('.content', function() {
 
     enter: function(element, done) {
 
-      TweenMax.from(element, 0.4, {
+      var el = element[0].querySelector('.view');
+
+      TweenMax.from(el, 0.4, {
         x: '100%',
-        autoAlpha: 0,
         ease: Power4.easeOut,
-        onComplete: done()
+        onComplete: function() {
+          done();
+        }
       });
+
+    },
+
+    leave: function(element, done) {
+
+      done();
 
     }
 
