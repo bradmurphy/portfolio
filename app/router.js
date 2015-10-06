@@ -24,27 +24,7 @@ app.config(['$routeProvider',
         controller: 'ContactCtrl'
       })
 
-      .when('/lilly-singh-masthead', {
-        templateUrl: 'views/project.html',
-        controller: 'ProjectCtrl'
-      })
-
-      .when('/google-search-masthead', {
-        templateUrl: 'views/project.html',
-        controller: 'ProjectCtrl'
-      })
-
-      .when('/google-satellites-website', {
-        templateUrl: 'views/project.html',
-        controller: 'ProjectCtrl'
-      })
-
-      .when('/ok-google-banner', {
-        templateUrl: 'views/project.html',
-        controller: 'ProjectCtrl'
-      })
-
-      .when('/ok-google-masthead', {
+      .when('/projects/:name', {
         templateUrl: 'views/project.html',
         controller: 'ProjectCtrl'
       })
