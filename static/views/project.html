@@ -1,11 +1,11 @@
-<div ng-controller="ProjectCtrl"  class="view">
+<div ng-controller="ProjectCtrl" class="view project">
   
-  <div ng-if="projectPrev">
-    <a ng-href="#projects/{{ projectPrev.name }}">prev</a>
+  <div class="prev" ng-if="projectPrev">
+    <a class="project-nav" ng-href="#projects/{{ projectPrev.name }}">prev</a>
   </div>
 
-  <div ng-if="projectNext">
-    <a ng-href="#projects/{{ projectNext.name }}">next</a>
+  <div class="next" ng-if="projectNext">
+    <a class="project-nav" ng-href="#projects/{{ projectNext.name }}">next</a>
   </div>
 
   <h4>{{ project.title }}</h4>
