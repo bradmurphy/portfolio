@@ -4,13 +4,14 @@
 var config = {
 
   manifest: [
-    {src: './images/alpharetta.png'}
+    {src: './images/logo.png'},
+    {src: './images/code.png'}
   ],
 
   data: {
-    lat: 42.279594,
-    lng: -83.732124,
-    marker: 'images/alpharetta.png'
+    lat: 42.279583,
+    lng: -83.746419,
+    marker: 'images/code.png'
   },
 
   work: [

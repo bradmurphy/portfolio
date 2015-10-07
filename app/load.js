@@ -23,3 +23,5 @@ var MapCtrl = require('./controllers/MapCtrl');
 var Loader = require('./core/Loader');
 var loader = new Loader(config.manifest);
 
+console.log('Type "what" + enter (not in the console. ;])');
+

@@ -21,7 +21,6 @@ app.animation('.animation', function() {
         ease: Power4.easeOut,
         onComplete: function() {
           done();
-          console.log('enter', el);
         }
       });
 

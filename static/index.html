@@ -18,13 +18,21 @@
       <!-- header -->
       <header>
 
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header-wrap">
+
+          <img src="images/logo.png" class="logo" alt="Brad Murphy">
+
+          <nav>
+
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+          </nav>
+
+        </div>
 
       </header>
       <!-- end header -->
@@ -46,12 +54,18 @@
 
           <!-- mobile nav -->
           <aside id="menu">
-            
-            <ul>
-              <li><a href="#about" ng-click="closeNav()">About</a></li>
-              <li><a href="#work" ng-click="closeNav()">Work</a></li>
-              <li><a href="#contact" ng-click="closeNav()">Contact</a></li>
-            </ul>
+
+            <nav class="mobile-wrap">
+              
+              <img src="images/logo.png" alt="Brad Murphy" class="mobile-logo">
+
+              <ul>
+                <li><a href="#about" ng-click="closeNav()">About</a></li>
+                <li><a href="#work" ng-click="closeNav()">Work</a></li>
+                <li><a href="#contact" ng-click="closeNav()">Contact</a></li>
+              </ul>
+
+            </nav>
 
           </aside>
           <!-- end mobile nav-->
