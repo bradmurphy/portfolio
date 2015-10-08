@@ -2,16 +2,21 @@
 
   <h1>{{ project.title }}</h1>
 
+
+  <div class="controls">
+
+    <div class="prev">
+      <a class="project-nav" ng-href="#projects/{{ projectPrev.name }}" ng-if="projectPrev"><i class="fa fa-angle-double-left"></i></a>
+    </div>
+
+    <div class="next">
+      <a class="project-nav" ng-href="#projects/{{ projectNext.name }}" ng-if="projectNext"><i class="fa fa-angle-double-right"></i></a>
+    </div>
+
+  </div>
+
   <div ng-if="iframeUrl">
     <iframe width="970" height="250" ng-src="{{ iframeUrl }}"></iframe>
   </div>
 
-</div>
-
-<div class="prev" ng-if="projectPrev">
-  <a class="project-nav" ng-href="#projects/{{ projectPrev.name }}"><i class="fa fa-angle-double-left"></i></a>
-</div>
-
-<div class="next" ng-if="projectNext">
-  <a class="project-nav" ng-href="#projects/{{ projectNext.name }}"><i class="fa fa-angle-double-right"></i></a>
 </div>

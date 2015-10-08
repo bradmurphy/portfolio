@@ -25,7 +25,7 @@ app.controller('NavCtrl', ['$scope', function($scope) {
   var close = new TimelineMax({paused: true});
 
   close.to(menu, 0.25, {
-    marginLeft: '-220px',
+    marginLeft: '-180px',
     ease: Power4.easeIn
   })
   .to(icon, 0.25, {
