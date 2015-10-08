@@ -1,19 +1,17 @@
 <div ng-controller="ProjectCtrl" class="view project">
-  
+
+  <h1>{{ project.title }}</h1>
+
+  <div ng-if="iframeUrl">
+    <iframe width="970" height="250" ng-src="{{ iframeUrl }}"></iframe>
+  </div>
+
   <div class="prev" ng-if="projectPrev">
-    <a class="project-nav" ng-href="#projects/{{ projectPrev.name }}">prev</a>
+    <a class="project-nav" ng-href="#projects/{{ projectPrev.name }}">previous</a>
   </div>
 
   <div class="next" ng-if="projectNext">
     <a class="project-nav" ng-href="#projects/{{ projectNext.name }}">next</a>
-  </div>
-
-  <h4>{{ project.title }}</h4>
-   <span>{{ project.type }}</span>
-  <span>{{ project.client }}</span>
-
-  <div ng-if="iframeUrl">
-    <iframe width="970" height="250" ng-src="{{ iframeUrl }}"></iframe>
   </div>
 
 </div>

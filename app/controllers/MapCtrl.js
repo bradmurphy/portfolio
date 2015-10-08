@@ -27,7 +27,7 @@ app.controller('MapCtrl', ['$scope', function($scope) {
   var styledMap = new google.maps.StyledMapType(styles, {name: 'Styled Map'});
 
   var mapOptions = {
-    zoom: 13,
+    zoom: 15,
     center: this.latLng,
     scrollwheel: false,
     disableDefaultUI: true,

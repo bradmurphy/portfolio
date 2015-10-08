@@ -9,3 +9,20 @@
   p
     font 400 14px/22px $bodyFont
     color $black
+
+  h1
+    position relative
+    font 700 24px/32px $headFont
+    letter-spacing 2px
+    display inline-block
+    color $navy
+    text-transform uppercase
+    &:after
+      position relative
+      bottom -2px
+      content ''
+      display block
+      height 2px
+      left 0
+      background $orange
+      width 100%
