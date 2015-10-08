@@ -48,6 +48,12 @@ var config = {
       type: 'Masthead',
       client: 'Google',
       url: 'http://www.bradmurphydev.com'
+    },
+    {
+      name: 'russell-stover-website',
+      title: 'Russell Stover',
+      type: 'Website',
+      client: 'Creative Circus'
     }
 
   ]
