@@ -6,12 +6,12 @@
     <iframe width="970" height="250" ng-src="{{ iframeUrl }}"></iframe>
   </div>
 
-  <div class="prev" ng-if="projectPrev">
-    <a class="project-nav" ng-href="#projects/{{ projectPrev.name }}">previous</a>
-  </div>
+</div>
 
-  <div class="next" ng-if="projectNext">
-    <a class="project-nav" ng-href="#projects/{{ projectNext.name }}">next</a>
-  </div>
+<div class="prev" ng-if="projectPrev">
+  <a class="project-nav" ng-href="#projects/{{ projectPrev.name }}">previous</a>
+</div>
 
+<div class="next" ng-if="projectNext">
+  <a class="project-nav" ng-href="#projects/{{ projectNext.name }}">next</a>
 </div>

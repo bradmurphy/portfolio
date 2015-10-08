@@ -2,30 +2,39 @@
   position relative
   min-height 100%
 
-  .next
-    width 50%
-    position fixed
-    right 0
-    bottom 0
 
-  .prev
-    width 50%
-    position fixed
-    left 0
-    bottom 0
 
-  .project-nav
-    display block
-    text-align center
-    text-decoration none
-    text-transform uppercase
-    background $navy
-    color $orange
-    font 600 16px/24px $headFont
-    letter-spacing 2px
-    padding 1em 0
-    transition all 0.25s ease-out
-    &:hover
-      background $orange
-      color $navy
-      padding 1.5em 0
+
+.next
+  width 50%
+  position fixed
+  right 0
+  bottom 0
+
+  @media $tablet
+    bottom 15%
+
+.prev
+  width 50%
+  position fixed
+  left 0
+  bottom 0
+  
+  @media $tablet
+    bottom 15%
+
+.project-nav
+  display block
+  text-align center
+  text-decoration none
+  text-transform uppercase
+  background $navy
+  color $orange
+  font 600 16px/24px $headFont
+  letter-spacing 2px
+  padding 1em 0
+  transition all 0.25s ease-out
+  &:hover
+    background $orange
+    color $navy
+    padding 1.5em 0
