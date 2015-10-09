@@ -18,6 +18,9 @@ app.controller('ProjectCtrl', ['$scope', '$routeParams', '$sce',
         $scope.project = el;
         $scope.projectPrev = $scope.work[index - 1];
         $scope.projectNext = $scope.work[index + 1];
+        $scope.content = $scope.project.content;
+        $scope.date = $scope.project.date;
+        $scope.technology = $scope.project.technology;
 
         if ($scope.project.internal) {
 

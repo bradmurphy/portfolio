@@ -22,4 +22,35 @@
 
   <div class="project-header external" ng-if="externalUrl"></div>
 
+  <section class="project-content" ng-cloak>
+
+    <aside class="sidebar">
+      
+      <div class="date">
+        <span><strong>Project Date:</strong> {{ date }}</span>
+      </div>
+
+      <div class="tech">
+        <span><strong>Technologies:</strong></span>
+
+        <ul>
+          <li ng-repeat="tech in technology">{{ tech }}</li>
+        </ul>
+
+      </div>
+
+      <div class="crafted">
+        
+      </div>
+
+    </aside>
+
+    <article>
+
+      <p ng-repeat="words in content">{{ words }}</p>
+
+    </article>
+
+  </section>
+
 </div>

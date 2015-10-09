@@ -20,42 +20,120 @@ var config = {
       title: 'Lilly Singh',
       type: 'Masthead',
       client: 'YouTube',
-      internal: 'http://www.bradmurphydev.com'
+      internal: 'http://www.bradmurphydev.com',
+      content: [
+        "Here's a sample paragraph",
+        "Another sample paragraph",
+        "And here's some more."
+      ],
+      date: 'August 2015',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'DoubleClick'
+      ]
     },
     {
       name: 'ok-google-banner',
       title: 'Ok Google',
       type: 'Banner',
       client: 'Google',
-      internal: 'http://www.bradmurphydev.com'
+      internal: 'http://www.bradmurphydev.com',
+      content: [
+        "Here's a sample paragraph",
+        "Another sample paragraph",
+        "And here's some more."
+      ],
+      date: 'August 2015',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'DoubleClick'
+      ]
     },
     {
       name: 'google-satellites-website',
       title: 'Google Satellites',
       type: 'Website',
       client: 'Google',
-      external: 'http://www.bradmurphydev.com'
+      external: 'http://www.bradmurphydev.com',
+      content: [
+        "Here's a sample paragraph",
+        "Another sample paragraph",
+        "And here's some more."
+      ],
+      date: 'August 2015',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'DoubleClick'
+      ]
     },
     {
       name: 'ok-google-masthead',
       title: 'Ok Google',
       type: 'Masthead',
       client: 'Google',
-      internal: 'http://www.bradmurphydev.com'
+      internal: 'http://www.bradmurphydev.com',
+      content: [
+        "Here's a sample paragraph",
+        "Another sample paragraph",
+        "And here's some more."
+      ],
+      date: 'August 2015',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'DoubleClick'
+      ]
     },
     {
       name: 'google-search-masthead',
       title: 'Google Search',
       type: 'Masthead',
       client: 'Google',
-      internal: 'http://www.bradmurphydev.com'
+      internal: 'http://www.bradmurphydev.com',
+      content: [
+        "Here's a sample paragraph",
+        "Another sample paragraph",
+        "And here's some more."
+      ],
+      date: 'August 2015',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'DoubleClick'
+      ]
     },
     {
       name: 'russell-stover-website',
       title: 'Russell Stover',
       type: 'Website',
       client: 'Creative Circus',
-      external: 'http://www.bradmurphydev.com'
+      external: 'http://www.bradmurphydev.com',
+      content: [
+        "Here's a sample paragraph",
+        "Another sample paragraph",
+        "And here's some more."
+      ],
+      date: 'August 2015',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'DoubleClick'
+      ]
     }
 
   ]

@@ -2,7 +2,7 @@
   position relative
   min-height 100%
 
-
+// controls styling
 .controls
   position absolute
   top 5px
@@ -23,7 +23,6 @@
     float right
     width 50%
 
-
 .project-nav
   display block
   text-align left
@@ -41,15 +40,16 @@
     text-align right
     font 700 36px $headFont
 
+// project header styling
 .project-header
   width 100%
-  margin-top 16px
-  padding 2.75em 0
-  box-sizing border-box
-  border 1px solid $lightGray
   text-align center
   overflow auto
+  margin-top 16px
+  padding 2.75em 0
+  border 1px solid $lightGray
   box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
+  box-sizing border-box
   
   h4
     color $orange
@@ -67,3 +67,75 @@
       display block
       margin 0 auto
       border none
+
+// project content styling
+.project-content
+  position relative
+  top 16px
+  display flex
+  flex-flow row wrap
+  align-content flex-start
+  width 100%
+  margin 0
+  padding 0
+  
+  .sidebar
+    flex 1 100%
+    order 1
+    height 200px
+    margin-top 16px
+    border 1px solid $lightGray
+    box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
+    box-sizing border-box
+    
+    @media $tablet
+      flex 1 auto
+      order 1
+
+  article
+    flex 1 100%
+    order 2
+    margin-top 16px
+    box-sizing border-box
+    
+    @media $tablet
+      flex 8 auto
+      padding-left 2em
+      margin-top 2px
+
+// sidebar styling
+.date
+  width 100%
+  padding 1.5em 2em
+  box-sizing border-box
+
+  span 
+    font 400 14px/18px $headFont
+    color $black
+
+    strong
+      color $navy
+
+.tech
+  width 100%
+  padding 0 2em 1.5em 2em
+  box-sizing border-box
+
+  span 
+    font 400 14px/18px $headFont
+    color $black
+
+    strong
+      color $navy
+  
+  ul
+    margin 0
+    padding 1em 1em 
+    li
+      font 400 14px/18px $headFont
+      color $black
+
+.crafted
+  width 100%
+  padding 0 2em 1.5em 2em
+  box-sizing border-box
