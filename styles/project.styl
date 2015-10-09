@@ -4,16 +4,26 @@
 
 // controls styling
 .controls
-  position absolute
-  top 5px
+  position relative
+  top 0
+  left 50%
+  margin-left -75px
   width 150px
-  height 50px
+  height 55px
+  z-index 999
 
   @media $tablet
-    right 50px
-    
+    position absolute
+    top 0
+    left calc(100% - 50px)
+    margin-left -150px
+
+  @media $laptop
+    left calc(100% - 35px)
+
+
   @media $desktop
-    right 0
+    left 100%
 
   .prev
     float left
@@ -25,10 +35,10 @@
 
 .project-nav
   display block
-  text-align left
+  text-align center
   text-decoration none
   text-transform uppercase
-  color $navy
+  color $orange
   font 700 44px $headFont
   letter-spacing 2px
   box-sizing border-box
@@ -37,6 +47,7 @@
     color $orange
   
   @media $tablet
+    color $navy
     text-align right
     font 700 36px $headFont
 
@@ -82,15 +93,18 @@
   .sidebar
     flex 1 100%
     order 1
-    height 200px
+    height auto
     margin-top 16px
     border 1px solid $lightGray
     box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
     box-sizing border-box
     
     @media $tablet
-      flex 1 auto
+      flex 1 35%
       order 1
+    
+    @media $laptop
+      flex 2 30%
 
   article
     flex 1 100%
@@ -99,12 +113,16 @@
     box-sizing border-box
     
     @media $tablet
-      flex 8 auto
+      flex 2 65%
       padding-left 2em
       margin-top 2px
+    
+    @media $laptop
+      flex 2 70%
 
 // sidebar styling
 .date
+  float left
   width 100%
   padding 1.5em 2em
   box-sizing border-box
@@ -117,6 +135,7 @@
       color $navy
 
 .tech
+  float left
   width 100%
   padding 0 2em 1.5em 2em
   box-sizing border-box
@@ -136,6 +155,8 @@
       color $black
 
 .crafted
+  float left
   width 100%
+  height 10px
   padding 0 2em 1.5em 2em
   box-sizing border-box

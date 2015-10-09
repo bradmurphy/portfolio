@@ -1,8 +1,5 @@
 <div ng-controller="ProjectCtrl" class="view project">
 
-  <h1>{{ project.title }}</h1>
-
-
   <div class="controls">
 
     <div class="prev">
@@ -14,6 +11,8 @@
     </div>
 
   </div>
+
+  <h1>{{ project.title }}</h1>
 
   <div class="project-header" ng-if="internalUrl">
     <iframe width="970" height="250" ng-src="{{ internalUrl }}"></iframe>
@@ -39,9 +38,7 @@
 
       </div>
 
-      <div class="crafted">
-        
-      </div>
+      <div class="crafted"></div>
 
     </aside>
 
