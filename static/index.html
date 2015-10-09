@@ -17,7 +17,7 @@
     <div class="wrap" ng-controller="NavCtrl">
 
       <!-- header -->
-      <header>
+      <header class="desktop-header">
 
         <div class="header-wrap">
 
@@ -38,13 +38,17 @@
       </header>
       <!-- end header -->
 
-      <!-- nav icon -->
-      <div id="nav-icon" ng-click="toggleNav()">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <!-- mobile header-->
+      <header class="mobile-header">
+        
+        <div id="nav-icon" ng-click="toggleNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+      </header>
       <!-- end nav icon -->
 
       <!-- content container -->
