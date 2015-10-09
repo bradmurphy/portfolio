@@ -10,6 +10,9 @@
   height 50px
 
   @media $tablet
+    right 50px
+    
+  @media $desktop
     right 0
 
   .prev
@@ -37,3 +40,30 @@
   @media $tablet
     text-align right
     font 700 36px $headFont
+
+.project-header
+  width 100%
+  margin-top 16px
+  padding 2.75em 0
+  box-sizing border-box
+  border 1px solid $lightGray
+  text-align center
+  overflow auto
+  box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
+  
+  h4
+    color $orange
+    @media $iframe
+      display none
+  
+  &.external
+    padding 0
+    height 340px
+  
+  iframe
+    display none
+    
+    @media $iframe
+      display block
+      margin 0 auto
+      border none

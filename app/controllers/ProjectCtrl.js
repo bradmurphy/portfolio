@@ -19,9 +19,15 @@ app.controller('ProjectCtrl', ['$scope', '$routeParams', '$sce',
         $scope.projectPrev = $scope.work[index - 1];
         $scope.projectNext = $scope.work[index + 1];
 
-        if ($scope.project.url) {
+        if ($scope.project.internal) {
 
-          $scope.iframeUrl = $sce.trustAsResourceUrl($scope.project.url);
+          $scope.internalUrl = $sce.trustAsResourceUrl($scope.project.internal);
+
+        }
+
+        if ($scope.project.external) {
+
+          $scope.externalUrl = $sce.trustAsResourceUrl($scope.project.external);
 
         }
 

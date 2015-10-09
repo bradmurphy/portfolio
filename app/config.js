@@ -20,40 +20,42 @@ var config = {
       title: 'Lilly Singh',
       type: 'Masthead',
       client: 'YouTube',
-      url: 'http://www.bradmurphydev.com'
+      internal: 'http://www.bradmurphydev.com'
     },
     {
       name: 'ok-google-banner',
       title: 'Ok Google',
       type: 'Banner',
       client: 'Google',
-      url: 'http://www.bradmurphydev.com'
+      internal: 'http://www.bradmurphydev.com'
     },
     {
       name: 'google-satellites-website',
       title: 'Google Satellites',
       type: 'Website',
-      client: 'Google'
+      client: 'Google',
+      external: 'http://www.bradmurphydev.com'
     },
     {
       name: 'ok-google-masthead',
       title: 'Ok Google',
       type: 'Masthead',
       client: 'Google',
-      url: 'http://www.bradmurphydev.com'
+      internal: 'http://www.bradmurphydev.com'
     },
     {
       name: 'google-search-masthead',
       title: 'Google Search',
       type: 'Masthead',
       client: 'Google',
-      url: 'http://www.bradmurphydev.com'
+      internal: 'http://www.bradmurphydev.com'
     },
     {
       name: 'russell-stover-website',
       title: 'Russell Stover',
       type: 'Website',
-      client: 'Creative Circus'
+      client: 'Creative Circus',
+      external: 'http://www.bradmurphydev.com'
     }
 
   ]

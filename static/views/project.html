@@ -15,8 +15,11 @@
 
   </div>
 
-  <div ng-if="iframeUrl">
-    <iframe width="970" height="250" ng-src="{{ iframeUrl }}"></iframe>
+  <div class="project-header" ng-if="internalUrl">
+    <iframe width="970" height="250" ng-src="{{ internalUrl }}"></iframe>
+    <h4>Sorry, this project wasn't designed for devices.</h1>
   </div>
+
+  <div class="project-header external" ng-if="externalUrl"></div>
 
 </div>
