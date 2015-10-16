@@ -63,21 +63,28 @@
   box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
   box-sizing border-box
   
-  h4
+  .sorry
     color $orange
     @media $iframe
       display none
+
+  .adblock
+    display none
+    @media $iframe
+      display block
+      color $orange
   
   &.external
     padding 0
-    height 340px
+    height 409px
   
   i
     display none
     @media $iframe
       display block
-      margin 0 auto
+      margin 10px auto 0 auto
       cursor pointer
+      color $navy
   
   iframe
     display none
@@ -95,7 +102,7 @@
   flex-flow row wrap
   align-content flex-start
   width 100%
-  margin 0
+  margin 0 0 35px 0
   padding 0
   
   .sidebar

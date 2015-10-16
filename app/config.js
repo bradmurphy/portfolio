@@ -20,26 +20,6 @@ var config = {
   ],
 
   work: [
-    // {
-    //   name: 'lilly-singh-masthead',
-    //   title: 'Lilly Singh',
-    //   type: 'Masthead',
-    //   client: 'YouTube',
-    //   internal: './projects/lilly-singh-masthead',
-    //   content: [
-    //     "Here's a sample paragraph",
-    //     "Another sample paragraph",
-    //     "And here's some more."
-    //   ],
-    //   date: 'August 2015',
-    //   technology: [
-    //     'HTML5',
-    //     'CSS3',
-    //     'Javascript',
-    //     'GSAP',
-    //     'DoubleClick'
-    //   ]
-    // },
     {
       name: 'ok-google-banner',
       title: 'Ok Google',
@@ -47,7 +27,7 @@ var config = {
       client: 'Google',
       internal: './projects/ok-google-banner',
       content: './content/projects/ok-google-banner.html',
-      date: 'August 2015',
+      date: 'April 2015',
       technology: [
         'HTML5',
         'CSS3',
@@ -63,13 +43,13 @@ var config = {
       client: 'Google',
       external: 'http://www.bradmurphydev.com',
       content: './content/projects/google-satellites-website.html',
-      date: 'August 2015',
+      date: 'November 2015',
       technology: [
         'HTML5',
         'CSS3',
         'Javascript',
         'GSAP',
-        'DoubleClick'
+        'Angular'
       ]
     },
     {
@@ -79,12 +59,13 @@ var config = {
       client: 'Google',
       internal: './projects/ok-google-masthead',
       content: './content/projects/ok-google-masthead.html',
-      date: 'August 2015',
+      date: 'June 2015',
       technology: [
         'HTML5',
         'CSS3',
         'Javascript',
         'GSAP',
+        'YouTube API',
         'DoubleClick'
       ]
     },
@@ -95,12 +76,13 @@ var config = {
       client: 'Google',
       internal: './projects/google-search-masthead',
       content: './content/projects/google-search-masthead.html',
-      date: 'August 2015',
+      date: 'October 2015',
       technology: [
         'HTML5',
         'CSS3',
         'Javascript',
         'GSAP',
+        'YouTube API',
         'DoubleClick'
       ]
     },
@@ -109,15 +91,16 @@ var config = {
       title: 'Russell Stover',
       type: 'Website',
       client: 'Creative Circus',
-      external: 'http://www.bradmurphydev.com',
+      external: 'http://russellstover.bradmurphydev.com',
       content: './content/projects/russell-stover-website.html',
-      date: 'August 2015',
+      date: 'December 2014',
       technology: [
         'HTML5',
         'CSS3',
         'Javascript',
-        'GSAP',
-        'DoubleClick'
+        'jQuery',
+        'PHP',
+        'GSAP'
       ]
     }
 
