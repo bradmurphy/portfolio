@@ -15,8 +15,9 @@
   <h1>{{ project.title }}</h1>
 
   <div class="project-header" ng-if="internalUrl">
-    <iframe width="970" height="250" ng-src="{{ internalUrl }}"></iframe>
-    <h4>Sorry, this project wasn't designed for devices.</h1>
+    <iframe width="970" height="275" ng-src="{{ internalUrl }}" scrolling="no"></iframe>
+    <i class="fa fa-refresh" ng-click="refresh()"></i>
+    <h4>Sorry, this project wasn'tesigned for devices.</h1>
   </div>
 
   <div class="project-header external" ng-if="externalUrl"></div>
@@ -42,11 +43,7 @@
 
     </aside>
 
-    <article>
-
-      <p ng-repeat="words in content">{{ words }}</p>
-
-    </article>
+    <article ng-include="content"></article>
 
   </section>
 

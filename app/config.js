@@ -3,10 +3,10 @@
 // config object
 var config = {
 
-  manifest: [
-    {src: './images/logo.png'},
-    {src: './images/code.png'}
-  ],
+  content: {
+    about: './content/about.html',
+    contact: './content/contact.html'
+  },
 
   data: {
     lat: 42.279583,
@@ -14,38 +14,39 @@ var config = {
     marker: 'images/code.png'
   },
 
+  manifest: [
+    {src: './images/logo.png'},
+    {src: './images/code.png'}
+  ],
+
   work: [
-    {
-      name: 'lilly-singh-masthead',
-      title: 'Lilly Singh',
-      type: 'Masthead',
-      client: 'YouTube',
-      internal: 'http://www.bradmurphydev.com',
-      content: [
-        "Here's a sample paragraph",
-        "Another sample paragraph",
-        "And here's some more."
-      ],
-      date: 'August 2015',
-      technology: [
-        'HTML5',
-        'CSS3',
-        'Javascript',
-        'GSAP',
-        'DoubleClick'
-      ]
-    },
+    // {
+    //   name: 'lilly-singh-masthead',
+    //   title: 'Lilly Singh',
+    //   type: 'Masthead',
+    //   client: 'YouTube',
+    //   internal: './projects/lilly-singh-masthead',
+    //   content: [
+    //     "Here's a sample paragraph",
+    //     "Another sample paragraph",
+    //     "And here's some more."
+    //   ],
+    //   date: 'August 2015',
+    //   technology: [
+    //     'HTML5',
+    //     'CSS3',
+    //     'Javascript',
+    //     'GSAP',
+    //     'DoubleClick'
+    //   ]
+    // },
     {
       name: 'ok-google-banner',
       title: 'Ok Google',
       type: 'Banner',
       client: 'Google',
-      internal: 'http://www.bradmurphydev.com',
-      content: [
-        "Here's a sample paragraph",
-        "Another sample paragraph",
-        "And here's some more."
-      ],
+      internal: './projects/ok-google-banner',
+      content: './content/projects/ok-google-banner.html',
       date: 'August 2015',
       technology: [
         'HTML5',
@@ -61,11 +62,7 @@ var config = {
       type: 'Website',
       client: 'Google',
       external: 'http://www.bradmurphydev.com',
-      content: [
-        "Here's a sample paragraph",
-        "Another sample paragraph",
-        "And here's some more."
-      ],
+      content: './content/projects/google-satellites-website.html',
       date: 'August 2015',
       technology: [
         'HTML5',
@@ -80,12 +77,8 @@ var config = {
       title: 'Ok Google',
       type: 'Masthead',
       client: 'Google',
-      internal: 'http://www.bradmurphydev.com',
-      content: [
-        "Here's a sample paragraph",
-        "Another sample paragraph",
-        "And here's some more."
-      ],
+      internal: './projects/ok-google-masthead',
+      content: './content/projects/ok-google-masthead.html',
       date: 'August 2015',
       technology: [
         'HTML5',
@@ -100,12 +93,8 @@ var config = {
       title: 'Google Search',
       type: 'Masthead',
       client: 'Google',
-      internal: 'http://www.bradmurphydev.com',
-      content: [
-        "Here's a sample paragraph",
-        "Another sample paragraph",
-        "And here's some more."
-      ],
+      internal: './projects/google-search-masthead',
+      content: './content/projects/google-search-masthead.html',
       date: 'August 2015',
       technology: [
         'HTML5',
@@ -121,11 +110,7 @@ var config = {
       type: 'Website',
       client: 'Creative Circus',
       external: 'http://www.bradmurphydev.com',
-      content: [
-        "Here's a sample paragraph",
-        "Another sample paragraph",
-        "And here's some more."
-      ],
+      content: './content/projects/russell-stover-website.html',
       date: 'August 2015',
       technology: [
         'HTML5',

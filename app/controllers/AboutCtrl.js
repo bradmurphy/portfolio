@@ -1,11 +1,13 @@
 'use strict';
 
-// require app
+// require app and config
 var app = require('../app');
+var config = require('../config');
 
 // about controller
 app.controller('AboutCtrl', ['$scope', function($scope) {
 
-  $scope.message = 'About me stuff goes here...';
+  $scope.content = config.content;
+  $scope.content = $scope.content.about;
 
 }]);

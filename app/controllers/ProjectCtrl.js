@@ -26,6 +26,13 @@ app.controller('ProjectCtrl', ['$scope', '$routeParams', '$sce',
 
           $scope.internalUrl = $sce.trustAsResourceUrl($scope.project.internal);
 
+          $scope.refresh = function() {
+
+            var iframe = document.querySelector('iframe');
+            iframe.contentWindow.location.reload(true);
+
+          };
+
         }
 
         if ($scope.project.external) {
@@ -39,3 +46,13 @@ app.controller('ProjectCtrl', ['$scope', '$routeParams', '$sce',
     });
 
   }]);
+
+// app.directive('projectContent', function() {
+
+//   return {
+//     restrict: 'C',
+//     scope: true,
+//     templateUrl: $scope.work.content
+//   };
+
+// });

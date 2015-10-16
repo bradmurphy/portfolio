@@ -53,6 +53,7 @@
 
 // project header styling
 .project-header
+  position relative
   width 100%
   text-align center
   overflow auto
@@ -70,6 +71,13 @@
   &.external
     padding 0
     height 340px
+  
+  i
+    display none
+    @media $iframe
+      display block
+      margin 0 auto
+      cursor pointer
   
   iframe
     display none
