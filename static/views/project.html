@@ -21,7 +21,10 @@
     <h4 class="sorry">Sorry, this project isn't intended for devices.</h4>
   </div>
 
-  <div class="project-header external" ng-if="externalUrl"></div>
+  <div class="project-header external" ng-if="externalUrl">
+    <div class="banner"></div>
+    <i class="fa fa-external-link" ng-click="go()"></i>
+  </div>
 
   <section class="project-content" ng-cloak>
 

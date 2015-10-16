@@ -39,6 +39,12 @@ app.controller('ProjectCtrl', ['$scope', '$routeParams', '$sce',
 
           $scope.externalUrl = $sce.trustAsResourceUrl($scope.project.external);
 
+          $scope.go = function() {
+
+            window.open($scope.externalUrl, '_blank');
+
+          };
+
         }
 
       }
@@ -46,13 +52,3 @@ app.controller('ProjectCtrl', ['$scope', '$routeParams', '$sce',
     });
 
   }]);
-
-// app.directive('projectContent', function() {
-
-//   return {
-//     restrict: 'C',
-//     scope: true,
-//     templateUrl: $scope.work.content
-//   };
-
-// });
