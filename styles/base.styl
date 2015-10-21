@@ -52,7 +52,7 @@ body, html
     height 100%
     margin 0
     padding 0
-    overflow-x hidden
+    overflow hidden
     
     @media only screen and (max-device-width: 1025px) and (orientation: landscape)
       display none
@@ -64,7 +64,7 @@ body, html
         padding 0 50px
         box-sizing border-box
         flex 1 100%
-        min-height 150px
+        min-height 125px
         height 15%
 
       @media $desktop
@@ -93,13 +93,19 @@ body, html
       flex 1 100%
       height calc(100% - 60px)
       overflow-x hidden
-      @media $tablet
-        min-height 600px
-        height 65%
-        
+      
+      @media $short
+        min-height calc(100% - 125px)
+        height 77%
+  
+      @media $tooShort
+        min-height 400px
+        height 70%
+
       .content-wrap
         min-width calc(100% + 180px)
         height 100%
+
         @media $tablet
           min-width 100%
 
@@ -135,8 +141,9 @@ body, html
 
     footer
       display none
-      @media $tablet
+
+      @media $tooShort
         display block
         flex 1 100%
-        min-height 150px
-        height 20%
+        min-height 125px
+        height 15%
