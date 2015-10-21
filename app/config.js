@@ -28,6 +28,7 @@ var config = {
       internal: './projects/ok-google-banner',
       content: './content/projects/ok-google-banner.html',
       date: 'April 2015',
+      thumb: './images/thumb-ok-google.jpg',
       technology: [
         'HTML5',
         'CSS3',
@@ -44,6 +45,7 @@ var config = {
       external: 'http://www.bradmurphydev.com',
       content: './content/projects/google-satellites-website.html',
       date: 'November 2015',
+      thumb: './images/thumb-google-satellites.jpg',
       technology: [
         'HTML5',
         'CSS3',
@@ -60,6 +62,7 @@ var config = {
       internal: './projects/ok-google-masthead',
       content: './content/projects/ok-google-masthead.html',
       date: 'June 2015',
+      thumb: './images/thumb-ok-google-masthead.jpg',
       technology: [
         'HTML5',
         'CSS3',
@@ -77,6 +80,7 @@ var config = {
       internal: './projects/google-search-masthead',
       content: './content/projects/google-search-masthead.html',
       date: 'October 2015',
+      thumb: './images/thumb-google-search-masthead.jpg',
       technology: [
         'HTML5',
         'CSS3',
@@ -94,6 +98,7 @@ var config = {
       external: 'http://russellstover.bradmurphydev.com',
       content: './content/projects/russell-stover-website.html',
       date: 'December 2014',
+      thumb: './images/thumb-russell-stover.jpg',
       technology: [
         'HTML5',
         'CSS3',
