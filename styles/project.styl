@@ -109,15 +109,29 @@
   position relative
   top 16px
   display flex
+  display -webkit-box
+  display -moz-box
+  display -ms-flexbox
+  display -webkit-flex
   flex-flow row wrap
+  -webkit-flex-flow row wrap
   align-content flex-start
   width 100%
   margin 0 0 35px 0
   padding 0
   
   .sidebar
-    flex 1 100%
+    width 100%
+    flex 1
+    -ms-flex 1
+    -webkit-flex 1
+    -moz-box-flex 1
+    -webkit-box-flex 1
     order 1
+    -ms-flex-order 1
+    -webkit-order 1
+    -moz-box-ordinal-group 1
+    -webkit-box-ordinal-group 1
     height auto
     margin-top 16px
     border 1px solid $lightGray
@@ -125,25 +139,29 @@
     box-sizing border-box
     
     @media $tablet
-      flex 1 35%
-      order 1
+      width 35%
+      
     
     @media $laptop
-      flex 2 30%
+      width 30%
 
   article
-    flex 1 100%
+    width 100%
     order 2
+    -ms-flex-order 2
+    -webkit-order 2
+    -moz-box-ordinal-group 2
+    -webkit-box-ordinal-group 2
     margin-top 16px
     box-sizing border-box
     
     @media $tablet
-      flex 2 65%
+      width 65%
       padding-left 2em
       margin-top 2px
     
     @media $laptop
-      flex 2 70%
+      width 70%
 
 // sidebar styling
 .date
