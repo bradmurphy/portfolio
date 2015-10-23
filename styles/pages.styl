@@ -11,10 +11,53 @@
   clear both
 
 .about
-
-  article p
+  
+  div
     width 100%
-    max-width 600px
+    
+    .profile
+      float left
+      width 100%
+      margin-top 16px
+      
+      @media $laptop
+        width 50%
+      
+      div
+        width 300px
+        height 200px
+        margin 0 auto
+        background url('../images/standard.gif') no-repeat
+        background-size 100%
+        transition all 0.25s ease-out
+
+        &:hover
+          background url('../images/hover.gif') no-repeat
+          background-size 100%
+        
+        @media $laptop
+          width 435px
+          height 290px
+          margin 0 0
+
+        @media $desktop
+          width 600px
+          height 400px
+
+    article
+      float left
+      width 100%
+      
+      @media $laptop
+        width 50%
+
+      p
+        margin-top 24px
+        width 100%
+        
+        @media $laptop
+          margin-top 0
+          max-width 545px
 
 
 .contact br

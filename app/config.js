@@ -16,7 +16,14 @@ var config = {
 
   manifest: [
     {src: './images/logo.png'},
-    {src: './images/code.png'}
+    {src: './images/code.png'},
+    {src: './images/standard.gif'},
+    {src: './images/hover.gif'},
+    {src: './images/thumb-google-satellites.jpg'},
+    {src: './images/thumb-google-search-masthead.jpg'},
+    {src: './images/thumb-ok-google-masthead.jpg'},
+    {src: './images/thumb-ok-google.jpg'},
+    {src: './images/thumb-russell-stover.jpg'}
   ],
 
   work: [
