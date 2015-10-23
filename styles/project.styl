@@ -135,13 +135,9 @@
     border 1px solid $lightGray
     box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
     box-sizing border-box
-    
+
     @media $tablet
-      width 30%
-      
-    
-    @media $laptop
-      width 30%
+      width 275px
 
   article
     width 100%
@@ -152,14 +148,11 @@
     -webkit-box-ordinal-group 2
     margin-top 16px
     box-sizing border-box
-    
+  
     @media $tablet
-      width 70%
+      width calc(100% - 275px)
       padding-left 2em
       margin-top 2px
-    
-    @media $laptop
-      width 70%
 
 // sidebar styling
 .date
