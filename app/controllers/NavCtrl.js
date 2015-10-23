@@ -10,6 +10,7 @@ app.controller('NavCtrl', ['$scope', function($scope) {
   var status = false;
   var icon = document.querySelector('#nav-icon');
   var menu = document.querySelector('#menu');
+  var content = document.querySelector('.content');
 
   var open = new TimelineMax({paused: true});
 
@@ -19,7 +20,10 @@ app.controller('NavCtrl', ['$scope', function($scope) {
   })
   .to(icon, 0.25, {
     className: '+=open',
-    ease: Power4.easeOut
+    ease: Power4.easeOut,
+    onComplete: function() {
+      content.style.overflowY = 'hidden';
+    }
   }, '-=0.25');
 
   var close = new TimelineMax({paused: true});
@@ -30,7 +34,10 @@ app.controller('NavCtrl', ['$scope', function($scope) {
   })
   .to(icon, 0.25, {
     className: '-=open',
-    ease: Power4.easeIn
+    ease: Power4.easeIn,
+    onComplete: function() {
+      content.style.overflowY = 'scroll';
+    }
   }, '-=0.25');
 
   $scope.toggleNav = function() {
