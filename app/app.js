@@ -8,31 +8,49 @@ var browser = require('bowser');
 var app = angular.module('folioApp', ['ngRoute', 'ngAnimate']);
 
 // animation for views
-app.animation('.animation', function() {
+if (!browser.mobile || browser.tablet) {
 
-  return {
+  app.animation('.animation', function() {
 
-    enter: function(element, done) {
+    return {
 
-      var el = element[0].querySelector('.view');
+      enter: function(element, done) {
 
-      if (!browser.mobile || browser.tablet) {
+        var el = element[0].querySelectorAll('.view');
 
-        TweenMax.from(el, 0.4, {
+        TweenMax.from(el, 0.25, {
           y: '200px',
           autoAlpha: 0,
+          delay: 0.25,
           ease: Power4.easeOut,
+          onComplete: function () {
+            done();
+            console.log('Enter');
+          }
+        });
+
+      },
+
+      leave: function(element, done) {
+
+        var el = element[0].querySelectorAll('.view');
+
+        TweenMax.to(el, 0.25, {
+          y: '200px',
+          autoAlpha: 0,
+          ease: Power4.easeIn,
           onComplete: function() {
             done();
+            console.log('Leave');
           }
         });
 
       }
 
-    }
+    };
 
-  };
+  });
 
-});
+}
 
 module.exports = app;

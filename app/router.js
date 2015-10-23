@@ -9,7 +9,7 @@ app.config(['$routeProvider',
 
       $routeProvider
 
-      .when('/', {
+      .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
@@ -30,7 +30,7 @@ app.config(['$routeProvider',
       })
 
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/about'
       });
 
     }]);

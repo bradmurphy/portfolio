@@ -64,7 +64,7 @@ body, html
         padding 0 50px
         box-sizing border-box
         flex 1 100%
-        min-height 125px
+        min-height 150px
         height 15%
 
       @media $desktop
@@ -95,12 +95,11 @@ body, html
       overflow-x hidden
       
       @media $short
-        min-height calc(100% - 125px)
+        min-height calc(100% - 150px)
         height 77%
   
       @media $tooShort
-        min-height 400px
-        height 70%
+        height auto
 
       .content-wrap
         min-width calc(100% + 180px)
