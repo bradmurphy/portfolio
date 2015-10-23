@@ -25,7 +25,6 @@ if (!browser.mobile || browser.tablet) {
           ease: Power4.easeOut,
           onComplete: function () {
             done();
-            console.log('Enter');
           }
         });
 
@@ -41,7 +40,6 @@ if (!browser.mobile || browser.tablet) {
           ease: Power4.easeIn,
           onComplete: function() {
             done();
-            console.log('Leave');
           }
         });
 

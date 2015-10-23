@@ -28,7 +28,7 @@ gulp.task('static', require('./tasks/static')( gulp, bs, config.static ));
 gulp.task('styles', require('./tasks/styles')( gulp, bs, config.styles, config.flags ));
 gulp.task('tests-jscs', require('./tasks/tests-jscs')( gulp, config.tests.lint ));
 gulp.task('tests-jshint', require('./tasks/tests-jshint')( gulp, config.tests.lint ));
-gulp.task('version', require('./tasks/version')( gulp, config.version ));
+// gulp.task('version', require('./tasks/version')( gulp, config.version ));
 
 gulp.task('scripts', gulp.parallel( 'scripts-app', 'scripts-load', 'scripts-vendor' ));
 gulp.task('tests', gulp.parallel( 'tests-jscs', 'tests-jshint' ));
@@ -64,7 +64,7 @@ gulp.task('build', gulp.series( 'clean', 'tests', gulp.parallel( 'static', 'scri
 
 gulp.task('build-dev', gulp.series( 'dev', 'build' ));
 
-gulp.task('build-prod', gulp.series( 'prod', 'build', 'version' ));
+gulp.task('build-prod', gulp.series( 'prod', 'build' ));
 
 gulp.task('watch-dev', gulp.series(  'dev', 'build', 'watch' ));
 
