@@ -5,32 +5,32 @@ var app = require('./app');
 
 // router
 app.config(['$routeProvider',
-    function($routeProvider) {
+  function($routeProvider) {
 
-      $routeProvider
+    $routeProvider
 
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
+    .when('/about', {
+      templateUrl: 'views/about.html',
+      controller: 'AboutCtrl'
+    })
 
-      .when('/work', {
-        templateUrl: 'views/work.html',
-        controller: 'WorkCtrl'
-      })
+    .when('/work', {
+      templateUrl: 'views/work.html',
+      controller: 'WorkCtrl'
+    })
 
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
-      })
+    .when('/contact', {
+      templateUrl: 'views/contact.html',
+      controller: 'ContactCtrl'
+    })
 
-      .when('/projects/:name', {
-        templateUrl: 'views/project.html',
-        controller: 'ProjectCtrl'
-      })
+    .when('/projects/:name', {
+      templateUrl: 'views/project.html',
+      controller: 'ProjectCtrl'
+    })
 
-      .otherwise({
-        redirectTo: '/about'
-      });
+    .otherwise({
+      redirectTo: '/about'
+    });
 
-    }]);
+  }]);

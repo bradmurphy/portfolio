@@ -10,14 +10,45 @@
   text-decoration underline
   clear both
 
-.sig
-  float left
-  width 300px
-  margin-left -10px
-  clear both
-
 .about
 
   article p
     width 100%
     max-width 600px
+
+
+.contact br
+  display none
+  
+  @media $android
+    display block
+
+.contact-block
+  float left
+  width 278px
+  
+  .sig
+    width 300px
+    margin-left -10px
+    clear both
+  
+  .email
+    float left
+    width 100%
+    color $navy
+    text-decoration underline
+    text-align right
+    clear both
+  
+  ul
+    float right
+    margin 10px 0 0 0
+    padding 0
+    list-style none
+    li
+      text-align right
+      display inline-block
+      a
+        padding-left 15px
+        font-size 1.75em
+        color $orange
