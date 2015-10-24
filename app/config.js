@@ -35,7 +35,7 @@ var config = {
       internal: './projects/ok-google-banner',
       content: './content/projects/ok-google-banner.html',
       date: 'April 2015',
-      thumb: './images/thumb-ok-google.jpg',
+      thumb: 'url(./images/thumb-ok-google.jpg) no-repeat 50% 50%',
       technology: [
         'HTML5',
         'CSS3',
@@ -44,23 +44,23 @@ var config = {
         'DoubleClick'
       ]
     },
-    {
-      name: 'google-satellites-website',
-      title: 'Google Satellites',
-      type: 'Website',
-      client: 'Google',
-      external: 'http://www.bradmurphydev.com',
-      content: './content/projects/google-satellites-website.html',
-      date: 'November 2015',
-      thumb: './images/thumb-google-satellites.jpg',
-      technology: [
-        'HTML5',
-        'CSS3',
-        'Javascript',
-        'GSAP',
-        'Angular'
-      ]
-    },
+    // {
+    //   name: 'google-satellites-website',
+    //   title: 'Google Satellites',
+    //   type: 'Website',
+    //   client: 'Google',
+    //   external: 'http://www.bradmurphydev.com',
+    //   content: './content/projects/google-satellites-website.html',
+    //   date: 'November 2015',
+    //   thumb: './images/thumb-google-satellites.jpg',
+    //   technology: [
+    //     'HTML5',
+    //     'CSS3',
+    //     'Javascript',
+    //     'GSAP',
+    //     'Angular'
+    //   ]
+    // },
     {
       name: 'ok-google-masthead',
       title: 'Ok Google',
@@ -69,7 +69,7 @@ var config = {
       internal: './projects/ok-google-masthead',
       content: './content/projects/ok-google-masthead.html',
       date: 'June 2015',
-      thumb: './images/thumb-ok-google-masthead.jpg',
+      thumb: 'url(./images/thumb-ok-google-masthead.jpg) no-repeat 10% 0',
       technology: [
         'HTML5',
         'CSS3',
@@ -87,7 +87,7 @@ var config = {
       internal: './projects/google-search-masthead',
       content: './content/projects/google-search-masthead.html',
       date: 'October 2015',
-      thumb: './images/thumb-google-search-masthead.jpg',
+      thumb: 'url(./images/thumb-google-search-masthead.jpg) no-repeat 50% 50%',
       technology: [
         'HTML5',
         'CSS3',
@@ -105,7 +105,8 @@ var config = {
       external: 'http://russellstover.bradmurphydev.com',
       content: './content/projects/russell-stover-website.html',
       date: 'December 2014',
-      thumb: './images/thumb-russell-stover.jpg',
+      thumb: 'url(./images/thumb-russell-stover.jpg) no-repeat 50% 50%',
+      hero: 'url(./images/hero-russell-stover.jpg) no-repeat 50% 50%',
       technology: [
         'HTML5',
         'CSS3',
