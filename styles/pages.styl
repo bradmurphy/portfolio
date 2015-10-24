@@ -1,7 +1,21 @@
 // page styles
 .hook
+  text-decoration none
+  display inline-block
   color $hook
-  text-decoration underline
+  &:after
+    position absolute
+    margin-top 22px
+    margin-left -37px
+    width 0
+    content ''
+    display inline-block
+    height 2px
+    background $hook
+    transition width 0.3s ease 0s, left 0.3s ease 0s
+
+  &:hover:after 
+    width 38px
 
 .link
   float left
@@ -77,12 +91,23 @@
     clear both
   
   .email
-    float left
-    width 100%
+    margin-left 120px
+    text-decoration none
+    display inline-block
     color $navy
-    text-decoration underline
-    text-align right
-    clear both
+    &:after
+      position absolute
+      margin-top 22px
+      margin-left -159px
+      width 0
+      content ''
+      display inline-block
+      height 2px
+      background $navy
+      transition width 0.3s ease 0s, left 0.3s ease 0s
+
+    &:hover:after 
+      width 159px
   
   ul
     float right
