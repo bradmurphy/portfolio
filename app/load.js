@@ -7,10 +7,12 @@
 // browser, config, selectors
 var config = require('./config');
 var browser = require('bowser');
+
+// selectors
 var nope = document.querySelector('.nope');
 var wrap = document.querySelector('.wrap');
-var link = document.querySelector('.whoopsy a');
-var outdated = document.querySelectorAll('.browser');
+var link = document.querySelector('.browser-link');
+var outdated = document.querySelector('.browser');
 
 // browser control
 if (browser.msie && browser.version <= 10) {
@@ -18,6 +20,7 @@ if (browser.msie && browser.version <= 10) {
   wrap.style.display = 'none';
   nope.style.display = 'block';
   outdated.style.display = 'block';
+  link.style.display = 'block';
   link.href = 'http://windows.microsoft.com/en-us/internet-explorer/download-ie';
 
 } else if (browser.chrome && browser.version <= 44) {
@@ -25,6 +28,7 @@ if (browser.msie && browser.version <= 10) {
   wrap.style.display = 'none';
   nope.style.display = 'block';
   outdated.style.display = 'block';
+  link.style.display = 'block';
   link.href = 'http://www.google.com/chrome';
 
 } else if (browser.opera && browser.version <= 31) {
@@ -32,6 +36,7 @@ if (browser.msie && browser.version <= 10) {
   wrap.style.display = 'none';
   nope.style.display = 'block';
   outdated.style.display = 'block';
+  link.style.display = 'block';
   link.href = 'http://www.opera.com';
 
 } else if (browser.safari && browser.version <= 8) {
@@ -39,13 +44,15 @@ if (browser.msie && browser.version <= 10) {
   wrap.style.display = 'none';
   nope.style.display = 'block';
   outdated.style.display = 'block';
-  link.href = '';
+  link.style.display = 'block';
+  link.href = 'http://www.apple.com/safari/';
 
 } else if (browser.firefox && browser.version <= 40) {
 
   wrap.style.display = 'none';
   nope.style.display = 'block';
   outdated.style.display = 'block';
+  link.style.display = 'block';
   link.href = 'http://www.mozilla.com/firefox';
 
 } else {
