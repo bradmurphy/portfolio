@@ -6,7 +6,7 @@
   &:after
     position absolute
     margin-top 22px
-    margin-left -37px
+    margin-left -92px
     width 0
     content ''
     display inline-block
@@ -15,7 +15,7 @@
     transition width 0.3s ease 0s, left 0.3s ease 0s
 
   &:hover:after 
-    width 38px
+    width 93px
 
 .link
   float left
@@ -43,6 +43,9 @@
         background url('../images/standard.gif') no-repeat
         background-size 100%
         transition all 0.25s ease-out
+        border 1px solid $lightGray
+        box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
+        box-sizing border-box
 
         &:hover
           background url('../images/hover.gif') no-repeat
@@ -108,7 +111,7 @@
       transition width 0.3s ease 0s, left 0.3s ease 0s
 
     &:hover:after 
-      width 159px
+      width 160px
   
   ul
     float right
