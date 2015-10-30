@@ -53,7 +53,7 @@ app.controller('MapCtrl', ['$scope', function($scope) {
     });
 
     google.maps.event.addListener(marker, 'click', function() {
-      window.location.href = '#contact';
+      window.location.href = './contact';
     });
 
     $scope.markers.push(marker);

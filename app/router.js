@@ -4,8 +4,8 @@
 var app = require('./app');
 
 // router
-app.config(['$routeProvider',
-  function($routeProvider) {
+app.config(['$routeProvider', '$locationProvider',
+  function($routeProvider, $locationProvider) {
 
     $routeProvider
 
@@ -32,5 +32,11 @@ app.config(['$routeProvider',
     .otherwise({
       redirectTo: '/about'
     });
+
+    if (window.history && window.history.pushState) {
+
+      $locationProvider.html5Mode(true);
+
+    }
 
   }]);
