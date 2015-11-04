@@ -5,6 +5,9 @@
   <section class="work">
 
     <a ng-href="projects/{{ work.name }}" ng-repeat="work in work" ng-style="{ 'background': work.thumb }">
+      <div>
+        <span>{{ work.title }} - {{ work.type }}</span>
+      </div>
     </a>
 
   </section>
