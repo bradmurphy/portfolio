@@ -23,12 +23,17 @@ var config = {
     {src: './images/thumb-google-search-masthead.jpg'},
     {src: './images/thumb-ok-google-masthead.jpg'},
     {src: './images/thumb-ok-google.jpg'},
-    {src: './images/thumb-russell-stover.jpg'}
+    {src: './images/thumb-russell-stover.jpg'},
+    {src: './images/badge.png'},
+    {src: './images/logo-youtube.png'},
+    {src: './images/logo-circus.png'},
+    {src: './images/logo-google.png'}
   ],
 
   work: [
     {
       name: 'ok-google-banner',
+      logo: './images/logo-google.png',
       title: 'Ok Google',
       type: 'Banner',
       client: 'Google',
@@ -63,6 +68,7 @@ var config = {
     // },
     {
       name: 'google-search-masthead',
+      logo: './images/logo-google.png',
       title: 'Google Search',
       type: 'Masthead',
       client: 'Google',
@@ -81,6 +87,7 @@ var config = {
     },
     {
       name: 'ok-google-masthead',
+      logo: './images/logo-google.png',
       title: 'Ok Google',
       type: 'Masthead',
       client: 'Google',
@@ -99,6 +106,7 @@ var config = {
     },
     {
       name: 'russell-stover-website',
+      logo: './images/logo-circus.png',
       title: 'Russell Stover',
       type: 'Website',
       client: 'Creative Circus',
