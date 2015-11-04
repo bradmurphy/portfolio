@@ -21,6 +21,7 @@ app.controller('ProjectCtrl', ['$scope', '$routeParams', '$sce',
         $scope.content = $scope.project.content;
         $scope.date = $scope.project.date;
         $scope.technology = $scope.project.technology;
+        $scope.logo = $scope.project.logo;
 
         if ($scope.project.internal) {
 
