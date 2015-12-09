@@ -100,7 +100,6 @@ var config = {
         'CSS3',
         'Javascript',
         'GSAP',
-        'YouTube API',
         'DoubleClick'
       ]
     },
