@@ -4,16 +4,15 @@
   padding 0
   margin 0 auto
   display flex
-  display -webkit-box
-  display -moz-box
   display -ms-flexbox
   display -webkit-flex
   flex-flow row wrap
   -webkit-flex-flow row wrap
   justify-content space-between
   -webkit-justify-content space-between
-  
+
   a
+    display flex
     position relative
     margin-bottom 25px
     width 100%
@@ -28,7 +27,7 @@
     @media $tablet
       width 225px
       height 225px
-    
+
     div
       position absolute
       background $navy
@@ -42,5 +41,5 @@
       box-sizing border-box
       text-align center
 
-      span 
+      span
         color $white

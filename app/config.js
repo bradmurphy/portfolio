@@ -93,7 +93,7 @@ var config = {
       client: 'YouTube',
       external: 'http://rewindtothefuture.withyoutube.com',
       content: './content/projects/youtube-rewind.html',
-      date: 'Decenver 2015',
+      date: 'December 2015',
       thumb: 'url(./images/thumb-youtube-rewind.jpg) no-repeat 50% 50%',
       hero: 'url(./images/hero-youtube-rewind.jpg) no-repeat 50% 50%',
       technology: [
