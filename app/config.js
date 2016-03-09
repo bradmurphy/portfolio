@@ -65,7 +65,8 @@ var config = {
         'CSS3',
         'Javascript',
         'GSAP',
-        'Angular'
+        'Angular',
+        'three.js'
       ]
     },
     {
@@ -146,25 +147,25 @@ var config = {
         'GSAP'
       ]
     },
-    // {
-    //   name: 'stitches-webapp',
-    //   logo: './images/logo-hook.png',
-    //   title: 'Stitches',
-    //   type: 'Webapp',
-    //   client: 'Hook',
-    //   external: 'http://terrabella.google.com',
-    //   content: './content/projects/stitches-webapp.html',
-    //   date: 'March 2016',
-    //   thumb: 'url(./images/thumb-stitches.jpg) no-repeat 50% 50%',
-    //   hero: 'url(./images/hero-stitches.jpg) no-repeat 50% 50%',
-    //   technology: [
-    //     'HTML5',
-    //     'CSS3',
-    //     'Javascript',
-    //     'GSAP',
-    //     'Polymer'
-    //   ]
-    // }
+    {
+      name: 'stitches-webapp',
+      logo: './images/logo-hook.png',
+      title: 'Stitches',
+      type: 'Webapp',
+      client: 'Hook',
+      external: 'http://hookerz.github.io/stitches',
+      content: './content/projects/stitches-webapp.html',
+      date: 'March 2016',
+      thumb: 'url(./images/thumb-stitches.jpg) no-repeat 50% 50%',
+      hero: 'url(./images/hero-stitches.jpg) no-repeat 50% 50%',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'Polymer'
+      ]
+    }
 
   ]
 
