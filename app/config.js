@@ -19,7 +19,7 @@ var config = {
     {src: './images/code.png'},
     {src: './images/standard.gif'},
     {src: './images/hover.gif'},
-    {src: './images/thumb-google-satellites.jpg'},
+    {src: './images/thumb-terra-bella.jpg'},
     {src: './images/thumb-google-search-masthead.jpg'},
     {src: './images/thumb-ok-google-masthead.jpg'},
     {src: './images/thumb-ok-google.jpg'},
@@ -49,23 +49,25 @@ var config = {
         'DoubleClick'
       ]
     },
-    // {
-    //   name: 'google-satellites-website',
-    //   title: 'Google Satellites',
-    //   type: 'Website',
-    //   client: 'Google',
-    //   external: 'http://www.bradmurphydev.com',
-    //   content: './content/projects/google-satellites-website.html',
-    //   date: 'November 2015',
-    //   thumb: './images/thumb-google-satellites.jpg',
-    //   technology: [
-    //     'HTML5',
-    //     'CSS3',
-    //     'Javascript',
-    //     'GSAP',
-    //     'Angular'
-    //   ]
-    // },
+    {
+      name: 'terra-bella-website',
+      logo: './images/logo-google.png',
+      title: 'Terra Bella',
+      type: 'Website',
+      client: 'Google',
+      external: 'http://terrabella.google.com',
+      content: './content/projects/terra-bella-website.html',
+      date: 'March 2016',
+      thumb: 'url(./images/thumb-terra-bella.jpg) no-repeat 50% 50%',
+      hero: 'url(./images/hero-terra-bella.jpg) no-repeat 50% 50%',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'Angular'
+      ]
+    },
     {
       name: 'google-search-masthead',
       logo: './images/logo-google.png',
@@ -143,7 +145,26 @@ var config = {
         'PHP',
         'GSAP'
       ]
-    }
+    },
+    // {
+    //   name: 'stitches-webapp',
+    //   logo: './images/logo-hook.png',
+    //   title: 'Stitches',
+    //   type: 'Webapp',
+    //   client: 'Hook',
+    //   external: 'http://terrabella.google.com',
+    //   content: './content/projects/stitches-webapp.html',
+    //   date: 'March 2016',
+    //   thumb: 'url(./images/thumb-stitches.jpg) no-repeat 50% 50%',
+    //   hero: 'url(./images/hero-stitches.jpg) no-repeat 50% 50%',
+    //   technology: [
+    //     'HTML5',
+    //     'CSS3',
+    //     'Javascript',
+    //     'GSAP',
+    //     'Polymer'
+    //   ]
+    // }
 
   ]
 
