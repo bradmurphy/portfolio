@@ -17,6 +17,7 @@ var config = {
   manifest: [
     {src: './images/logo.png'},
     {src: './images/code.png'},
+    {src: './images/badge.png'},
     {src: './images/standard.gif'},
     {src: './images/hover.gif'},
     {src: './images/thumb-terra-bella.jpg'},
@@ -24,29 +25,58 @@ var config = {
     {src: './images/thumb-ok-google-masthead.jpg'},
     {src: './images/thumb-ok-google.jpg'},
     {src: './images/thumb-russell-stover.jpg'},
-    {src: './images/badge.png'},
+    {src: './images/thumb-stitches.jpg'},
+    {src: './images/hero-terra-bella.jpg'},
+    {src: './images/hero-youtube-rewind.jpg'},
+    {src: './images/hero-russell-stover.jpg'},
+    {src: './images/hero-stitches.jpg'},
     {src: './images/logo-youtube.png'},
     {src: './images/logo-circus.png'},
-    {src: './images/logo-google.png'}
+    {src: './images/logo-google.png'},
+    {src: './images/logo-hook.png'}
   ],
 
   work: [
+
     {
-      name: 'ok-google-banner',
-      logo: './images/logo-google.png',
-      title: 'Ok Google',
-      type: 'Banner',
-      client: 'Google',
-      internal: './src/ok-google-banner',
-      content: './content/projects/ok-google-banner.html',
-      date: 'April 2015',
-      thumb: 'url(./images/thumb-ok-google.jpg) no-repeat 50% 50%',
+      name: 'stitches-webapp',
+      logo: './images/logo-hook.png',
+      title: 'Stitches',
+      type: 'Web App',
+      client: 'Hook',
+      external: 'http://hookerz.github.io/stitches',
+      content: './content/projects/stitches-webapp.html',
+      date: 'March 2016',
+      thumb: 'url(./images/thumb-stitches.jpg) no-repeat 50% 50%',
+      hero: 'url(./images/hero-stitches.jpg) no-repeat 50% 50%',
       technology: [
         'HTML5',
         'CSS3',
         'Javascript',
         'GSAP',
-        'DoubleClick'
+        'Polymer'
+      ]
+    },
+    {
+      name: 'youtube-rewind',
+      logo: './images/logo-youtube.png',
+      title: 'Rewind to the Future',
+      type: 'Website',
+      client: 'YouTube',
+      external: 'http://rewindtothefuture.withyoutube.com',
+      content: './content/projects/youtube-rewind.html',
+      date: 'December 2015',
+      thumb: 'url(./images/thumb-youtube-rewind.jpg) no-repeat 50% 50%',
+      hero: 'url(./images/hero-youtube-rewind.jpg) no-repeat 50% 50%',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'Polymer',
+        'CreateJS',
+        'Underscore.js',
+        'three.js'
       ]
     },
     {
@@ -89,27 +119,6 @@ var config = {
       ]
     },
     {
-      name: 'youtube-rewind',
-      logo: './images/logo-youtube.png',
-      title: 'Rewind to the Future',
-      type: 'Website',
-      client: 'YouTube',
-      external: 'http://rewindtothefuture.withyoutube.com',
-      content: './content/projects/youtube-rewind.html',
-      date: 'December 2015',
-      thumb: 'url(./images/thumb-youtube-rewind.jpg) no-repeat 50% 50%',
-      hero: 'url(./images/hero-youtube-rewind.jpg) no-repeat 50% 50%',
-      technology: [
-        'HTML5',
-        'CSS3',
-        'Javascript',
-        'GSAP',
-        'Polymer',
-        'CreateJS',
-        'Underscore.js'
-      ]
-    },
-    {
       name: 'ok-google-masthead',
       logo: './images/logo-google.png',
       title: 'Ok Google',
@@ -119,6 +128,24 @@ var config = {
       content: './content/projects/ok-google-masthead.html',
       date: 'June 2015',
       thumb: 'url(./images/thumb-ok-google-masthead.jpg) no-repeat 10% 0',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'DoubleClick'
+      ]
+    },
+    {
+      name: 'ok-google-banner',
+      logo: './images/logo-google.png',
+      title: 'Ok Google',
+      type: 'Banner',
+      client: 'Google',
+      internal: './src/ok-google-banner',
+      content: './content/projects/ok-google-banner.html',
+      date: 'April 2015',
+      thumb: 'url(./images/thumb-ok-google.jpg) no-repeat 50% 50%',
       technology: [
         'HTML5',
         'CSS3',
@@ -147,25 +174,6 @@ var config = {
         'GSAP'
       ]
     },
-    {
-      name: 'stitches-webapp',
-      logo: './images/logo-hook.png',
-      title: 'Stitches',
-      type: 'Webapp',
-      client: 'Hook',
-      external: 'http://hookerz.github.io/stitches',
-      content: './content/projects/stitches-webapp.html',
-      date: 'March 2016',
-      thumb: 'url(./images/thumb-stitches.jpg) no-repeat 50% 50%',
-      hero: 'url(./images/hero-stitches.jpg) no-repeat 50% 50%',
-      technology: [
-        'HTML5',
-        'CSS3',
-        'Javascript',
-        'GSAP',
-        'Polymer'
-      ]
-    }
 
   ]
 
