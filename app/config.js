@@ -79,26 +79,26 @@ var config = {
         'three.js'
       ]
     },
-    {
-      name: 'terra-bella-website',
-      logo: './images/logo-google.png',
-      title: 'Terra Bella',
-      type: 'Website',
-      client: 'Google',
-      external: 'http://terrabella.google.com',
-      content: './content/projects/terra-bella-website.html',
-      date: 'March 2016',
-      thumb: 'url(./images/thumb-terra-bella.jpg) no-repeat 50% 50%',
-      hero: 'url(./images/hero-terra-bella.jpg) no-repeat 50% 50%',
-      technology: [
-        'HTML5',
-        'CSS3',
-        'Javascript',
-        'GSAP',
-        'Angular',
-        'three.js'
-      ]
-    },
+    // {
+    //   name: 'terra-bella-website',
+    //   logo: './images/logo-google.png',
+    //   title: 'Terra Bella',
+    //   type: 'Website',
+    //   client: 'Google',
+    //   external: 'http://terrabella.google.com',
+    //   content: './content/projects/terra-bella-website.html',
+    //   date: 'March 2016',
+    //   thumb: 'url(./images/thumb-terra-bella.jpg) no-repeat 50% 50%',
+    //   hero: 'url(./images/hero-terra-bella.jpg) no-repeat 50% 50%',
+    //   technology: [
+    //     'HTML5',
+    //     'CSS3',
+    //     'Javascript',
+    //     'GSAP',
+    //     'Angular',
+    //     'three.js'
+    //   ]
+    // },
     {
       name: 'google-search-masthead',
       logo: './images/logo-google.png',
