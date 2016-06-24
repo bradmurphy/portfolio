@@ -39,6 +39,24 @@ var config = {
   work: [
 
     {
+      name: 'creator-hub-website',
+      logo: './images/logo-youtube.png',
+      title: 'Creator Hub',
+      type: 'Website',
+      client: 'YouTube',
+      external: 'http://www.youtube.com/yt/creators',
+      content: './content/projects/creator-hub-website.html',
+      date: 'June 2016',
+      thumb: 'url(./images/thumb-creator-hub.jpg) no-repeat 50% 50%',
+      hero: 'url(./images/hero-creator-hub.jpg) no-repeat 50% 50%',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'Polymer'
+      ]
+    },
+    {
       name: 'stitches-webapp',
       logo: './images/logo-hook.png',
       title: 'Stitches',
@@ -55,6 +73,26 @@ var config = {
         'Javascript',
         'GSAP',
         'Polymer'
+      ]
+    },
+    {
+      name: 'terra-bella-website',
+      logo: './images/logo-google.png',
+      title: 'Terra Bella',
+      type: 'Website',
+      client: 'Google',
+      external: 'http://terrabella.google.com',
+      content: './content/projects/terra-bella-website.html',
+      date: 'March 2016',
+      thumb: 'url(./images/thumb-terra-bella.jpg) no-repeat 50% 50%',
+      hero: 'url(./images/hero-terra-bella.jpg) no-repeat 50% 50%',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'GSAP',
+        'Angular',
+        'THREE.js'
       ]
     },
     {
@@ -76,27 +114,7 @@ var config = {
         'Polymer',
         'CreateJS',
         'Underscore.js',
-        'three.js'
-      ]
-    },
-    {
-      name: 'terra-bella-website',
-      logo: './images/logo-google.png',
-      title: 'Terra Bella',
-      type: 'Website',
-      client: 'Google',
-      external: 'http://terrabella.google.com',
-      content: './content/projects/terra-bella-website.html',
-      date: 'March 2016',
-      thumb: 'url(./images/thumb-terra-bella.jpg) no-repeat 50% 50%',
-      hero: 'url(./images/hero-terra-bella.jpg) no-repeat 50% 50%',
-      technology: [
-        'HTML5',
-        'CSS3',
-        'Javascript',
-        'GSAP',
-        'Angular',
-        'three.js'
+        'THREE.js'
       ]
     },
     {
@@ -152,26 +170,6 @@ var config = {
         'Javascript',
         'GSAP',
         'DoubleClick'
-      ]
-    },
-    {
-      name: 'russell-stover-website',
-      logo: './images/logo-circus.png',
-      title: 'Russell Stover',
-      type: 'Website',
-      client: 'Creative Circus',
-      external: 'http://russellstover.bradmurphydev.com',
-      content: './content/projects/russell-stover-website.html',
-      date: 'December 2014',
-      thumb: 'url(./images/thumb-russell-stover.jpg) no-repeat 50% 50%',
-      hero: 'url(./images/hero-russell-stover.jpg) no-repeat 50% 50%',
-      technology: [
-        'HTML5',
-        'CSS3',
-        'Javascript',
-        'jQuery',
-        'PHP',
-        'GSAP'
       ]
     },
 
