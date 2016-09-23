@@ -39,6 +39,24 @@ var config = {
   work: [
 
     {
+      name: 'nextup-website',
+      logo: './images/logo-youtube.png',
+      title: 'Next Up',
+      type: 'Website',
+      client: 'YouTube',
+      external: 'http://www.youtube.com/yt/nextup',
+      content: './content/projects/nextup-website.html',
+      date: 'September 2016',
+      thumb: 'url(./images/thumb-nextup.jpg) no-repeat 50% 50%',
+      hero: 'url(./images/hero-nextup.jpg) no-repeat 50% 50%',
+      technology: [
+        'HTML5',
+        'CSS3',
+        'Javascript',
+        'Polymer'
+      ]
+    },
+    {
       name: 'creator-hub-website',
       logo: './images/logo-youtube.png',
       title: 'Creator Hub',
@@ -171,7 +189,7 @@ var config = {
         'GSAP',
         'DoubleClick'
       ]
-    },
+    }
 
   ]
 
